@@ -13,7 +13,7 @@ class Clientes {
         this._nombre = nuevo_nombre;
     }
     set impuesto(nuevo_impuesto) {
-        this.nuevo_impuesto = nuevo_impuesto;
+        this._impuesto = nuevo_impuesto;
     }
      calcularImpuesto(){
         const resultado = this._impuesto().montoBrutoAnual() - this._impuesto().deducciones();
@@ -33,3 +33,6 @@ function validarMontoYDeducciones() {
         
     return false; 
 };
+
+
+export default Clientes;

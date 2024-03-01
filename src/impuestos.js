@@ -15,9 +15,11 @@ class Impuestos{
     set deducciones(nuevo_deducciones) {
         this.nuevo_deducciones = nuevo_deducciones;
     }
+
+    
 }
 
-function validarNumero(parametro) {
+ function validarNumero(parametro) {
     // Verificar si el parámetro es un número
     if (typeof parametro === 'number' && !isNaN(parametro)) {
         return true; // Es un número válido
@@ -27,3 +29,5 @@ function validarNumero(parametro) {
         return false;
     }
 }
+
+export default  Impuestos;
