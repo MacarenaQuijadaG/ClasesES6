@@ -17,9 +17,10 @@ class Clientes {
     }
 
     calcularImpuesto() {
-        const resultado = this._impuesto.montoBrutoAnual - this._impuesto.deducciones;
-        return resultado;
+        const resultado = (this._impuesto.montoBrutoAnual - this._impuesto.deducciones) * 0.21;
+        return (`El impuesto es: ${resultado}`);
     }
+    
 
     validarMontoYDeducciones() {
 

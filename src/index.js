@@ -12,10 +12,10 @@ let clientes_1 = new Clientes('pancrasio', impuestos_1);
 if (clientes_1.impuesto.validarNumero(montoBrutoAnual_1) && clientes_1.impuesto.validarNumero(deducciones_1)) {
     // Llamada al método validarMontoYDeducciones directamente desde clientes_1
     console.log(`Cliente 1: ${clientes_1.nombre}, su Monto Bruto es: ${impuestos_1.montoBrutoAnual}`);
-    clientes_1.calcularImpuesto(montoBrutoAnual_1, deducciones_1);  // preguntar por qué no muestra el resultado
+    console.log(clientes_1.calcularImpuesto(montoBrutoAnual_1, deducciones_1));
     clientes_1.validarMontoYDeducciones();
 
-}
+} 
 
 // Segundo caso
 let montoBrutoAnual_2 = 100000;
@@ -27,6 +27,7 @@ let clientes_2 = new Clientes('miguel', impuestos_2);
 if (clientes_2.impuesto.validarNumero(montoBrutoAnual_2) && clientes_2.impuesto.validarNumero(deducciones_2)) {
     // Llamada al método validarMontoYDeducciones directamente desde clientes_1
     console.log(`Cliente 2: ${clientes_2.nombre}, su Monto Bruto es: ${impuestos_2.montoBrutoAnual}`);
+    console.log(clientes_2.calcularImpuesto(montoBrutoAnual_2, deducciones_2));
     clientes_2.validarMontoYDeducciones()
 }
 
@@ -42,6 +43,7 @@ let clientes_3 = new Clientes('juanito', impuestos_3);
 if (clientes_3.impuesto.validarNumero(montoBrutoAnual_3) && clientes_3.impuesto.validarNumero(deducciones_3)) {
     // Llamada al método validarMontoYDeducciones directamente desde clientes_1
     console.log(`Cliente 3: ${clientes_3.nombre}, su Monto Bruto es: ${impuestos_3.montoBrutoAnual}`);
+    console.log(clientes_3.calcularImpuesto(montoBrutoAnual_3, deducciones_3));
     clientes_3.validarMontoYDeducciones();
 
 
