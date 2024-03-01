@@ -8,6 +8,8 @@ let deducciones_1 = 50000;
 let impuestos_1 = new Impuestos(montoBrutoAnual_1, deducciones_1);
 let clientes_1 = new Clientes('pancrasio', impuestos_1);
 
+
+
 if (clientes_1.impuesto.validarNumero(montoBrutoAnual_1) && clientes_1.impuesto.validarNumero(deducciones_1)) {
     // Assuming you have a defined calcularImpuestos function
     console.log(`El ${clientes_1.nombre} tiene un impuesto de ${clientes_1.calcularImpuesto()}`);

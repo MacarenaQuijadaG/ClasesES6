@@ -16,18 +16,19 @@ class Impuestos{
         this.nuevo_deducciones = nuevo_deducciones;
     }
 
+     validarNumero(parametro) {
+        // Verificar si el parámetro es un número
+        if (typeof parametro === 'number' && !isNaN(parametro)) {
+            return true; // Es un número válido
+        } else {
+            // Si no es un número, mostrar mensaje de error
+            console.error("Por favor, ingrese un número válido.");
+            return false;
+        }
+    }
     
 }
 
- function validarNumero(parametro) {
-    // Verificar si el parámetro es un número
-    if (typeof parametro === 'number' && !isNaN(parametro)) {
-        return true; // Es un número válido
-    } else {
-        // Si no es un número, mostrar mensaje de error
-        console.error("Por favor, ingrese un número válido.");
-        return false;
-    }
-}
+
 
 export default  Impuestos;
