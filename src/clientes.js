@@ -15,22 +15,23 @@ class Clientes {
     set impuesto(nuevo_impuesto) {
         this._impuesto = nuevo_impuesto;
     }
-    
-     calcularImpuesto() {
+
+    calcularImpuesto() {
         const resultado = this._impuesto.montoBrutoAnual - this._impuesto.deducciones;
         return resultado;
     }
-     validarMontoYDeducciones() {
-        
-        if (this.montoBrutoAnual < 0 || this.deducciones < 0) {
-                throw new Error('El monto bruto anual y las deducciones deben ser valores positivos');
+
+    validarMontoYDeducciones() {
+
+        if (this._impuesto.montoBrutoAnual < 0 || this._impuesto.deducciones < 0) {
+            console.log("El monto bruto anual y las deducciones deben ser valores positivos");
         }
-        if (this.deducciones > this.montoBrutoAnual * 0.45) {
-                console.log("Queda exonerado de Impuestos Anuales");
-                return true;
+        else if (this._impuesto.deducciones > this._impuesto.montoBrutoAnual * 0.45) {
+            console.log("Queda exonerado de Impuestos Anuales");
+        } else {
+            console.log("Proceso Normal")
         }
-            
-        return false; 
+
     };
 }
 

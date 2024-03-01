@@ -1,5 +1,5 @@
-class Impuestos{
-    constructor(montoBrutoAnual, deducciones){
+class Impuestos {
+    constructor(montoBrutoAnual, deducciones) {
         this._montoBrutoAnual = montoBrutoAnual;
         this._deducciones = deducciones;
     }
@@ -16,7 +16,7 @@ class Impuestos{
         this.nuevo_deducciones = nuevo_deducciones;
     }
 
-     validarNumero(parametro) {
+    validarNumero(parametro) {
         // Verificar si el parámetro es un número
         if (typeof parametro === 'number' && !isNaN(parametro)) {
             return true; // Es un número válido
@@ -26,9 +26,9 @@ class Impuestos{
             return false;
         }
     }
-    
+
 }
 
 
 
-export default  Impuestos;
+export default Impuestos;
