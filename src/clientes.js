@@ -1,4 +1,4 @@
-class Cliente {
+class Clientes {
     constructor(nombre, impuesto) {
         this._nombre = nombre;
         this._impuesto = impuesto;
