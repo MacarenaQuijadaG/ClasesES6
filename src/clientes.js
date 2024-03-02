@@ -20,15 +20,15 @@ class Clientes {
         const resultado = (this._impuesto.montoBrutoAnual - this._impuesto.deducciones) * 0.21;
         return (`El impuesto es: ${resultado}`);
     }
-    
+
 
     validarMontoYDeducciones() {
 
         if (this._impuesto.montoBrutoAnual < 0 || this._impuesto.deducciones < 0) {
-            console.log("El monto bruto anual y las deducciones deben ser valores positivos");
+            return 0;
         }
         else if (this._impuesto.deducciones > this._impuesto.montoBrutoAnual * 0.45) {
-            console.log("Queda exonerado de Impuestos Anuales");
+            console.log("Queda exonerado de Impuestos Anuales, sus deducciones superan el monto bruto anual");
         } else {
             console.log("Proceso Normal")
         }
