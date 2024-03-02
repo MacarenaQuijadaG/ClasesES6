@@ -56,7 +56,7 @@ let impuestos_3 = new Impuestos(montoBrutoAnual_3, deducciones_3);
 let clientes_3 = new Clientes('juanito', impuestos_3);
 
 if (clientes_3.impuesto.validarNumero(montoBrutoAnual_3) && clientes_3.impuesto.validarNumero(deducciones_3)) {
-    // Llamada al método validarMontoYDeducciones directamente desde clientes_1
+    // Llamada al método validarMontoYDeducciones directamente desde clientes_3
     console.log(`Cliente 3: ${clientes_3.nombre}, su Monto Bruto es: ${impuestos_3.montoBrutoAnual} y sus deducciones son: ${deducciones_3} `);
 
     if (clientes_3.validarMontoYDeducciones() == 0) {
