@@ -41,7 +41,7 @@ Instrucciones y ejemplos para ejecutar el conjunto de pruebas.
 ## Autores ✒️
 
 - **Macarena Quijada G** - [Macarena Quijada G](https://github.com/MacarenaQuijadaG)
-- **Andrea Rosero** -[Andre]
+- **Andrea Rosero** -[andreaendigital](https://github.com/andreaendigital)
 
 ---
 
