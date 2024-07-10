@@ -45,4 +45,4 @@ Instrucciones y ejemplos para ejecutar el conjunto de pruebas.
 
 ---
 
-⌨️ con ❤️ por [Macarena Quijada G](https://github.com/MacarenaQuijadaG) 😊
+
